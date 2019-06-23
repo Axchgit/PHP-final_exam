@@ -11,15 +11,16 @@
 	<body>
 		<?php include('css/header_index.php') ?>
 			
-			    <div class="nav">
-		<a class="left current" href="admin_login.php"  >管理员登录</a>
+			    <div style="text-align: center;" class="nav">
+		<!--<a class="left current" href="admin_login.php"  >管理员登录</a>
 		<!--<a class="left" href="user_add.php">用户注册</a>-->
-		<a class="left " href="user_login.php">用户登录</a>
-		<a class="left " href="user_add.php">用户注册</a>
+		<!--<a class="left " href="user_login.php">用户登录</a>
+		<a class="left " href="user_add.php">用户注册</a>-->
 		<!--<a href="user_login.php"></a>
 		<a class="right" href="admin_logout.php">退出登录</a>-->
-		<div style="clear: both;"></div>
-		</div>
+		<!--<div style="clear: both;"></div>-->
+		<a href="admin_login.php" ><img src="img/gongren.png" align="center" style="width: 400px; "> </a> 
+		<a href="user_login.php"><img src="img/zhiyuan.png" align="center"style="width: 400px;" ></a> </div>
 		
 	
 		<!--<div style="text-align: center;">

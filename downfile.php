@@ -3,7 +3,7 @@
 		header('Content_Type:text/html;charset=utf-8');
 	include 'conn/dbpdo.php';
 	$dt=date("Y-m-d-His",time());
-	$a=$dt.'.txt';
+	$a='data/'.$dt.'.txt';
 	
 	$sql='select * from vegetable_message';
 	$re=$pdo->query($sql);
@@ -53,6 +53,14 @@ function getMime($extname) {
     } else {
         return "application/octet-stream";
     }
+    	
+	fopen($a,'a+');
+	unlink($a);
+//	if(!(unlink($a))){
+//		echo "shanchushibai";
+//	}else{
+//		echo "chenggong";
+//	}
 }  
 ?>
    

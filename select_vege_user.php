@@ -34,8 +34,8 @@
 <form name="admin_add" method="post">
 	
 	<div class="ah1">
-		<h1 >	<span  style="color: rgb(69,137,148);text-align: center;">查找蔬菜</span></h1>
-	<hr color="#008B8B">
+		<!--<h1 >	<span  style="color: rgb(69,137,148);text-align: center;">查找蔬菜</span></h1>
+	<hr color="#008B8B">-->
 	<p><span class="sp1">根据序号查询：</span><span class="sp2"><input name="rid" type="text"  size="30"></span></p>
 	
 	<p><span class="sp3"><input name="sel" class="bt1" type="submit" value="查询"></span></p>
@@ -78,7 +78,7 @@
 		
 		echo '<div class="ah1"><table border=1><caption style="font-size:28px ;color: rgb(69,137,148);">查询结果<hr color="#008B8B"></caption><tr><th>序号</th><th>ID号</th><th>昵称</th><th>密码</th><th>手机号</th><th>地址</th><th>注册时间</th><th>操作</th></tr></div>';
 		foreach($r as $arr){
-		echo "<tr><td>{$arr['id']}</td><td style='text-align: center;' ><img width='100px'height='80px'   src='$arr[picture]' /></td><td>{$arr['name']}</td><td>{$arr['ori_place']}</td><td>{$arr['pur_price']}</td><td>{$arr['sell_price']}</td><td>{$arr['add_time']}</td><td><a href='amend_user.php?id={$arr['id']}'><button class='bt3' >修改</button></a> | <a href='delete_vege.php?id={$arr['id']}'><button class='bt3'>删除</button></a></td></tr>";
+		echo "<tr><td>{$arr['id']}</td><td style='text-align: center;' ><img width='100px'height='80px'   src='$arr[picture]' /></td><td>{$arr['name']}</td><td>{$arr['ori_place']}</td><td>{$arr['pur_price']}</td><td>{$arr['sell_price']}</td><td>{$arr['add_time']}</td><td><a href='amend_user.php?id={$arr['id']}'><button class='bt3' >修改</button></a> | <a href='delete_vege_select.php?id={$arr['id']}'><button class='bt3'>删除</button></a></td></tr>";
 		
 		}
 		

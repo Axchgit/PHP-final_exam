@@ -7,18 +7,15 @@
 		<link href="css/navigation.css" rel="stylesheet" type="text/css">
 	</head>
 	<body >
-<?php include('css/header_admin.php') ?>
-			<div ></div>
-			<body style="text-align: center;" ></body>
-	    <div class="nav">
-		<a class="left" href="admin_add.php"  >管理员注册</a>
-		<!--<a class="left " href="user_add.php">用户注册</a>-->
+        <?php include('css/header_admin.php') ?>
+		<div class="nav">
+		<a class="left " href="admin_add.php"  >管理员注册</a>
 		<a class="left current" href="user_message.php">用户列表</a>
 		<a class="left " href="vege_message.php">蔬菜列表</a>
 		<a class="left " href="select_user.php">查找用户</a>
 		<a class="left " href="select_vege.php">查找蔬菜</a>
-		<a href="user_login.php"></a>
-		<a class="right" href="admin_logout.php">退出登录</a>
+	    <a style="color: darkorange;" class="right" href="admin_logout.php">退出登录</a>
+	    <!--<a style="color: darkorange;" class="right" href="index.php">返回首页</a>-->
 		<div style="clear: both;"></div>
 		</div>
 	</body>
@@ -80,7 +77,8 @@ if($currentPage==$pageCount){
 ?>
 <br />
 
-<div style="text-align: center;">
-<a href="admin_index.php"><button  class="bt2">返回页面</button></a>
+<!--<div style="text-align: center;">
+<a href=""><button  class="bt2">返回页面</button></a>-->
+<!--<a href="admin_index.php"><button style="width: 100px; height: 40px;" class="bt3">返回页面</button></a>-->
 
 <!--<a href="select_user.php"><button  class="bt2">查询用户</button></a></div>-->

@@ -6,20 +6,17 @@
 		<link href="css/navigation.css" rel="stylesheet" type="text/css">
 	</head>
 	<body >
-<?php include('css/header_admin.php') ?>
-			
-	    <div class="nav">
-		<a class="left" href="admin_add.php"  >管理员注册</a>
-		<a class="left" href="user_message.php">用户列表</a>
-		<a class="left current" href="user_message.php">蔬菜列表</a>
+        <?php include('css/header_admin.php') ?>
+		<div class="nav">
+		<a class="left " href="admin_add.php"  >管理员注册</a>
+		<a class="left " href="user_message.php">用户列表</a>
+		<a class="left current" href="vege_message.php">蔬菜列表</a>
 		<a class="left " href="select_user.php">查找用户</a>
 		<a class="left " href="select_vege.php">查找蔬菜</a>
-		<a href="user_login.php"></a>
-		<a class="right" href="admin_logout.php">退出登录</a>
+	    <a style="color: darkorange;" class="right" href="admin_logout.php">退出登录</a>
+	    <!--<a style="color: darkorange;" class="right" href="index.php">返回首页</a>-->
 		<div style="clear: both;"></div>
 		</div>
-		
-		
 	</body>
 </html>
 <?php
@@ -51,10 +48,10 @@ $ps2=$pdo->query($sql2);
 
 echo '<table class="ah" border=2><br><br></caption><tr><th>序号</th><th>图片</th><th>名称</th><th>产地</th><th>批发价(元)</th><th>建议零售价(元)</th><th>添加时间</th><th>操作</th></tr>';
 foreach($ps2 as $arr){
-	echo "<tr>
+	echo "<tr >
 		<td align='center'>{$arr['id']}</td>
-		<td align='center' >
-		<img align='center' width='100px'height='80px'   src='$arr[picture]' /></td>
+		<td align='center' ><div style='text-align: center;' >
+		<img width='100px'height='80px'   src='$arr[picture]' /></div></td>
 		<td align='center'>{$arr['name']}</td>
 		<td align='center'>{$arr['ori_place']}</td>
 		<td align='center'>{$arr['pur_price']}</td>
@@ -68,7 +65,7 @@ echo '</table>';
 $pageUp=$currentPage-1;
 $pageDn=$currentPage+1;
 echo '<div class="ah">';
-ECHO "<a style='width: 90%; background-color: beige;margin: 5px auto 5px auto;'>总记录数：{$rows}&nbsp;&nbsp;&nbsp;&nbsp;页码：{$currentPage}/{$pageCount}&nbsp;&nbsp;&nbsp;&nbsp;</a>";	
+echo "<a style='width: 90%; background-color: beige;margin: 5px auto 5px auto;'>总记录数：{$rows}&nbsp;&nbsp;&nbsp;&nbsp;页码：{$currentPage}/{$pageCount}&nbsp;&nbsp;&nbsp;&nbsp;</a>";	
 if($currentPage==1){
 	echo "<button class='bt4' >首页</button> | <button class='bt4' >上一页</button> |"; 
 }else{

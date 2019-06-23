@@ -23,7 +23,7 @@
 </html>
 <?php
 include 'conn/dbpdo.php';
-include 'conn/verify_admin.php';
+include 'conn/verify_user.php';
 
 $sql1="select count(*) from vegetable_message";
 $ps=$pdo->query($sql1);

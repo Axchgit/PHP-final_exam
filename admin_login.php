@@ -1,5 +1,13 @@
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="css/navigation.css"/>
+<?php
+	session_start();
+	if(isset($_SESSION['admin'])){
+		echo "<script>document.location.href='./admin_index.php';</script>";
+		//header("location:login.php");
+	}
+
+?>
 
 <!--<html>
 	<head>
@@ -38,7 +46,7 @@
 
 
 <?php
-	session_start();
+
 	
 if(isset($_POST['dl'])){
 

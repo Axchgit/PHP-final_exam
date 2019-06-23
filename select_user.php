@@ -6,18 +6,15 @@
 		<link href="css/navigation.css" rel="stylesheet" type="text/css">
 	</head>
 	<body >
-<?php include('css/header_admin.php') ?>
-			
-	    <div class="nav">
-		<a class="left" href="admin_add.php"  >管理员注册</a>
-		
-	
-		<!--<a class="left " href="user_add.php">用户注册</a>-->
+        <?php include('css/header_admin.php') ?>
+		<div class="nav">
+		<a class="left " href="admin_add.php"  >管理员注册</a>
 		<a class="left " href="user_message.php">用户列表</a>
 		<a class="left " href="vege_message.php">蔬菜列表</a>
-		<a class="left current" href="user_message.php">查找用户</a>
+		<a class="left current" href="select_user.php">查找用户</a>
 		<a class="left " href="select_vege.php">查找蔬菜</a>
-		<a class="right" href="admin_logout.php">退出登录</a>
+	    <a style="color: darkorange;" class="right" href="admin_logout.php">退出登录</a>
+	    <!--<a style="color: darkorange;" class="right" href="index.php">返回首页</a>-->
 		<div style="clear: both;"></div>
 		</div>
 	</body>
@@ -26,8 +23,8 @@
 <form name="admin_add" method="post">
 	
 	<div class="ah1">
-		<h1 >	<span  style="color: rgb(69,137,148);text-align: center;">查找用户</span></h1>
-	<hr color="#008B8B">
+		<!--<h1 >	<span  style="color: rgb(69,137,148);text-align: center;">查找用户</span></h1>
+	<hr color="#008B8B">-->
 	<p><span class="sp1">根据ID号查询：</span><span class="sp2"><input name="rid" type="text"  size="30"></span></p>
 	
 	<p><span class="sp3"><input name="sel" class="bt1" type="submit" value="查询"></span></p>
@@ -52,7 +49,7 @@
 		
 		echo '<div class="ah1"><table border=1><caption style="font-size:28px ;color: rgb(69,137,148);">查询结果<hr color="#008B8B"></caption><tr><th>序号</th><th>ID号</th><th>昵称</th><th>密码</th><th>手机号</th><th>地址</th><th>注册时间</th><th>操作</th></tr></div>';
 		foreach($r as $arr){
-			echo "<tr><td>{$arr['id']}</td><td>{$arr['run_id']}</td><td>{$arr['nickname']}</td><td>{$arr['password']}</td><td>{$arr['phone_number']}</td><td>{$arr['address']}</td><td>{$arr['add_time']}</td><td><a href='amend_user.php?id={$arr['id']}'><button  class='bt3'>修改</button></a> | <a href='delete_user.php?id={$arr['id']}'><button class='bt3'>删除</button></a></td></tr>";
+			echo "<tr><td>{$arr['id']}</td><td>{$arr['run_id']}</td><td>{$arr['nickname']}</td><td>{$arr['password']}</td><td>{$arr['phone_number']}</td><td>{$arr['address']}</td><td>{$arr['add_time']}</td><td><a href='amend_user.php?id={$arr['id']}'><button  class='bt3'>修改</button></a> | <a href='delete_user_select.php?id={$arr['id']}'><button class='bt3'>删除</button></a></td></tr>";
 		}
 		
 		
@@ -70,7 +67,7 @@
 		
 		echo '<div class="ah1"><table border=1><caption style="font-size:28px ;color: rgb(69,137,148);">查询结果<hr color="#008B8B"></caption><tr><th>序号</th><th>ID号</th><th>昵称</th><th>密码</th><th>手机号</th><th>地址</th><th>注册时间</th><th>操作</th></tr></div>';
 		foreach($r as $arr){
-			echo "<tr><td>{$arr['id']}</td><td>{$arr['run_id']}</td><td>{$arr['nickname']}</td><td>{$arr['password']}</td><td>{$arr['phone_number']}</td><td>{$arr['address']}</td><td>{$arr['add_time']}</td><td><a href='amend_user.php?id={$arr['id']}'><button  class='bt3'>修改</button></a> | <a href='delete_user.php?id={$arr['id']}'><button class='bt3'>删除</button></a></td></tr>";
+			echo "<tr><td>{$arr['id']}</td><td>{$arr['run_id']}</td><td>{$arr['nickname']}</td><td>{$arr['password']}</td><td>{$arr['phone_number']}</td><td>{$arr['address']}</td><td>{$arr['add_time']}</td><td><a href='amend_user.php?id={$arr['id']}'><button  class='bt3'>修改</button></a> | <a href='delete_user_select.php?id={$arr['id']}'><button class='bt3'>删除</button></a></td></tr>";
 		}
 		
 		
