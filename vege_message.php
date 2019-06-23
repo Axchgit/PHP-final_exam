@@ -84,10 +84,12 @@ if($currentPage==$pageCount){
 	echo '</div>'
 ?>
 <html>
+	<br>
 <div style="text-align: center;">
 
 
 <a href="vege_add.php"><button style="width: 100px; height: 40px;" class="bt3">添加蔬菜</button></a>
+<a href="downfile.php"><button style="width: 100px; height: 40px;" class="bt3">下载</button></a>
 
 </div>
 </html>
