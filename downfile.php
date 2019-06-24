@@ -54,13 +54,15 @@ function getMime($extname) {
         return "application/octet-stream";
     }
     	
-	fopen($a,'a+');
-	unlink($a);
+
+} 
+
+// 	fopen($fn,'a+');
+//	unlink($fn);
 //	if(!(unlink($a))){
 //		echo "shanchushibai";
 //	}else{
 //		echo "chenggong";
 //	}
-}  
 ?>
    

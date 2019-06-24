@@ -1,8 +1,8 @@
 <?php
-	header('Content_Type:text/html;charset=utf-8');
+		header('Content_Type:text/html;charset=utf-8');
 	include 'conn/dbpdo.php';
 	$dt=date("Y-m-d-His",time());
-	$a=$dt.'.txt';
+	$a='data/'.$dt.'.txt';
 	
 	$sql='select * from vegetable_message';
 	$re=$pdo->query($sql);
@@ -21,5 +21,4 @@
 		];
 		file_put_contents("$a",$date,FILE_APPEND);
 	}
-
 ?>

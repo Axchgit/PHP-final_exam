@@ -40,7 +40,8 @@
 	<hr color="#008B8B">
 	<p><span class="sp1">用户名：</span><span class="sp2"><input name="user" type="text"  size="30"></span></p>
 	<p><span class="sp1">密码：</span><span class="sp2"><input name="pwd" type="password"></span></p>
-	<p><span class="sp3"><input name="dl" class="bt1" type="submit" value="登录"></span></p>
+	<p><span class="sp3"><input name="dl" class="bt1" type="submit" value="登录">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;没有账号？<a style="color: crimson;" href="index.php">退出</a></span></p>
+	
 	</div>
 </form>
 

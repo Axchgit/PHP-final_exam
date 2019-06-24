@@ -2,7 +2,7 @@
 
 <html>
 	
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link href="css/navigation.css" rel="stylesheet" type="text/css">
 
 <html>
 	<head>
@@ -13,19 +13,21 @@
 	<body >
 <?php include('css/header_user.php') ?>
 	<div class="nav">	
-	<a class="left " href="vege_message_user.php">蔬菜列表</a>
+	<!--<a class="left " href="vege_message_user.php">蔬菜列表</a>
 	<a class="left " href="select_vege_user.php">查找蔬菜</a>
 	<a class="left current" href="user_add.php">新用户注册</a>
-	<!--<a class="left" href="user_login.php">其它账户登录</a>-->		
+	
 	<a class="right" style="color: darkorange;" href="logout_account.php">注销用户</a>
 	<a class="right" style="color: darkorange;" href="user_logout.php">退出登录</a>
 	<div style="clear: both;"></div>
 	</div>	
-	</body>
+	</body>-->
 </html>
 
 <form name="admin_add" method="post">
     <div class="ah1">
+    	<h1 >	<span  style="color: rgb(69,137,148);text-align: center;">用户注册</span></h1>
+	<hr color="#008B8B">
 	<p><span class="sp1">昵称：</span><span class="sp2"><input name="nname" type="text"  size="30"></span></p>
 	<p><span class="sp1">密码：</span><span class="sp2"><input name="pw" type="password"></span></p>
 	<p><span class="sp1">手机号：</span><span class="sp2"><input name="phone" type="text"  size="30"></span></p>

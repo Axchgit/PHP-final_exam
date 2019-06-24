@@ -20,7 +20,7 @@
 		<a class="right" href="admin_logout.php">退出登录</a>-->
 		<!--<div style="clear: both;"></div>-->
 		<a href="admin_login.php" ><img src="img/gongren.png" align="center" style="width: 400px; "> </a> 
-		<a href="user_login.php"><img src="img/zhiyuan.png" align="center"style="width: 400px;" ></a> </div>
+		<a href="user_login.php"><img src="img/zhiyuan.png" align="center"style="width: 420px;" ></a> </div>
 		
 	
 		<!--<div style="text-align: center;">

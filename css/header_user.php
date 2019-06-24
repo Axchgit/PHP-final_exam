@@ -6,7 +6,7 @@
 </style>
 
 <div class="ah">
-	<img width="60px"  src="./img/zhiyuan.png" />
+	<img width="60px"  src="./img/zhiyuan1.png" />
 	<span style="color:goldenrod;text-align: center;">蔬菜批发管理</span>
 	<span style="color: rgb(114,83,52);">#</span>
 	<span style="color: rgb(69,137,148);">用户界面</span>
