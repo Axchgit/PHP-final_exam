@@ -48,7 +48,14 @@
 		
 		echo '<div class="ah1"><table border=1><caption style="font-size:28px ;color: rgb(69,137,148);">查询结果<hr color="#008B8B"></caption><tr><th>序号</th><th>ID号</th><th>昵称</th><th>密码</th><th>手机号</th><th>地址</th><th>注册时间</th><th>操作</th></tr></div>';
 		foreach($r as $arr){
-			echo "<tr><td>{$arr['id']}</td><td>{$arr['run_id']}</td><td>{$arr['nickname']}</td><td>{$arr['password']}</td><td>{$arr['phone_number']}</td><td>{$arr['address']}</td><td>{$arr['add_time']}</td><td><a href='amend_user.php?id={$arr['id']}'><button  class='bt3'>修改</button></a> | <a href='delete_user_select.php?id={$arr['id']}'><button class='bt3'>删除</button></a></td></tr>";
+			echo "
+			<tr>
+				<td align='center'>{$arr['id']}</td><td>{$arr['run_id']}</td>
+				<td align='center'>{$arr['nickname']}</td><td>{$arr['password']}</td>
+				<td align='center'>{$arr['phone_number']}</td>
+				<td align='center'>{$arr['address']}</td>
+				<td align='center'>{$arr['add_time']}</td>
+				<td align='center'><a href='amend_user.php?id={$arr['id']}'><button  class='bt3'>修改</button></a> | <a href='delete_user_select.php?id={$arr['id']}'><button class='bt3'>删除</button></a></td></tr>";
 		}
 		
 		
@@ -66,7 +73,14 @@
 		
 		echo '<div class="ah1"><table border=1><caption style="font-size:28px ;color: rgb(69,137,148);">查询结果<hr color="#008B8B"></caption><tr><th>序号</th><th>ID号</th><th>昵称</th><th>密码</th><th>手机号</th><th>地址</th><th>注册时间</th><th>操作</th></tr></div>';
 		foreach($r as $arr){
-			echo "<tr><td>{$arr['id']}</td><td>{$arr['run_id']}</td><td>{$arr['nickname']}</td><td>{$arr['password']}</td><td>{$arr['phone_number']}</td><td>{$arr['address']}</td><td>{$arr['add_time']}</td><td><a href='amend_user.php?id={$arr['id']}'><button  class='bt3'>修改</button></a> | <a href='delete_user_select.php?id={$arr['id']}'><button class='bt3'>删除</button></a></td></tr>";
+			echo "
+			<tr>
+				<td align='center'>{$arr['id']}</td><td>{$arr['run_id']}</td>
+				<td align='center'>{$arr['nickname']}</td>
+				<td align='center'>{$arr['password']}</td>
+				<td align='center'>{$arr['phone_number']}</td>
+				<td align='center'>{$arr['address']}</td><td>{$arr['add_time']}</td>
+				<td align='center'><a href='amend_user.php?id={$arr['id']}'><button  class='bt3'>修改</button></a> | <a href='delete_user_select.php?id={$arr['id']}'><button class='bt3'>删除</button></a></td></tr>";
 		}
 		
 		
