@@ -90,6 +90,7 @@
 		$sql1="insert into vegetable_message(picture,name,ori_place,pur_price,sell_price,add_time) values(:a,:b,:c,:d,:e,:f)";
 	$sql2="select name from vegetable_message group by name having count(*)>1";
 	$pdo->beginTransaction();
+	
 	$ps = $pdo->prepare($sql1);
 	
 	$ps->bindParam("a",$filename);
