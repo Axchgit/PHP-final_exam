@@ -3,7 +3,7 @@
 <?php
 	session_start();
 	if(isset($_SESSION['admin'])){
-		echo "<script>document.location.href='./admin_index.php';</script>";
+		echo "<script>document.location.href='./vege_message.php';</script>";
 		//header("location:login.php");
 	}
 
@@ -58,8 +58,8 @@ if(isset($_POST['dl'])){
     $result=$pdo->query($sql);
 		
 	if($result->rowCount()>0){
-	header("location:admin_index.php");
-		echo "<script>alert('登录成功');document.location.href='';</script>";
+//	header("location:admin_index.php");
+		echo "<script>alert('登录成功');document.location.href='vege_message.php';</script>";
 	
 	
 	}else{
