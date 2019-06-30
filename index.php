@@ -3,12 +3,13 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/navigation.css"/>
 
+
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<title>主界面</title>
 	</head>
-	<body>
+	<body style="background:url(img/04.jpg); background-repeat:no-repeat;  background-size: 100%;">
 		<?php include('css/header_index.php') ?>
 			
 			    <div style="text-align: center;" class="nav">
