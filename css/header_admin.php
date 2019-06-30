@@ -9,7 +9,7 @@
 <div class="ah">
 	<img width="60px"  src="./img/gongren1.png" />
 	<span style="color:goldenrod;text-align: center;">蔬菜批发管理</span>
-	<span style="color: rgb(114,83,52);">#</span>
+	<span style="color: rgb(114,83,52);">֍</span>
 	<span style="color: rgb(69,137,148);">管理员界面</span>
 	<div style="clear: both;"></div>
 </div>

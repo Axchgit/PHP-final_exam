@@ -57,7 +57,7 @@
 		<td align='center'>{$arr['pur_price']}</td>
 		<td align='center'>{$arr['sell_price']}</td>
 		<td align='center'>{$arr['add_time']}</td>
-		<td align='center'><a href='amend_vege.php?id={$arr['id']}'><button class='bt3' >修改</button></a> | <a href='delete_vege.php?id={$arr['id']} onClick='return confirm('真的要删除吗？')'><button class='bt3' >删除</button></a></td></tr>";
+		<td align='center'><a href='amend_vege.php?id={$arr['id']}'><button class='bt3' >修改</button></a> | <a href='delete_vege.php?id={$arr['id']} '><button class='bt3' >删除</button></a></td></tr>";
 	
 }
 		
