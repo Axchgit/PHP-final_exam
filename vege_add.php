@@ -13,7 +13,7 @@
 		<a class="left " href="user_message.php">用户列表</a>
 		<a class="left " href="select_vege.php">查找蔬菜</a>
 		<a class="left " href="select_user.php">查找用户</a>
-		<a class="left " href="admin_add.php"  >管理员注册</a>		
+		<a class="left " href="admin_add.php"  >添加管理员</a>		
 	    <a style="color: darkorange;" class="right" href="admin_logout.php">退出登录</a>
 		<div style="clear: both;"></div>
 		</div>
