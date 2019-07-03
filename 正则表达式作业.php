@@ -1,3 +1,20 @@
+
+<!--
+	
+	
+	示例文件；
+	作用：注册输入格式验证代码示例；
+	
+	-->
+
+
+
+
+
+
+
+
+
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href ="css/style.css" />
 <h1 align="center">用户注册</h1><hr>	

@@ -98,7 +98,7 @@ if($currentPage==$pageCount){
 
 
 <!--<a href="vege_add.php"><button style="width: 100px; height: 40px;" class="bt3">添加蔬菜</button></a>-->
-<a href="downfile.php"><button style="width: 100px; height: 40px;" class="bt3">点击下载</button></a>
+<a href="down_vege_excel.php"><button style="width: 100px; height: 40px;" class="bt3">点击下载</button></a>
 
 </div>
 </html>

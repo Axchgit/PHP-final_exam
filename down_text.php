@@ -1,3 +1,22 @@
+
+
+
+<!--
+	
+	
+	暂存文件；
+	
+	作用：用于保存查询到的数据库数据到.txt文件里
+	
+	-->
+
+
+
+
+
+
+
+
 <?php
 		header('Content_Type:text/html;charset=utf-8');
 	include 'conn/dbpdo.php';

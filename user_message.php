@@ -86,8 +86,11 @@ if($currentPage==$pageCount){
 ?>
 <br />
 
+<a href="down_user_excel.php"><button style="width: 100px; height: 40px;" class="bt3">点击下载</button></a>
+
 <!--<div style="text-align: center;">
 <a href=""><button  class="bt2">返回页面</button></a>-->
 <!--<a href="admin_index.php"><button style="width: 100px; height: 40px;" class="bt3">返回页面</button></a>-->
 
 <!--<a href="select_user.php"><button  class="bt2">查询用户</button></a></div>-->
+

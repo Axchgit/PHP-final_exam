@@ -1,3 +1,26 @@
+
+
+
+
+<!--
+	
+	
+	暂存文件；
+	
+	作用：用于下载 ('down_text.php')所生成的.txt文件；
+	
+	-->
+
+
+
+
+
+
+
+
+
+
+
 <?php
 	
 		header('Content_Type:text/html;charset=utf-8');

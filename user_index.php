@@ -1,5 +1,21 @@
+
+<!--
+	
+	
+	暂存文件；
+	作用：用户主页面；
+	
+	-->
+
+
+
+
+
+
+
+
 <?php
-include 'conn/verify_user.php';
+//include 'conn/verify_user.php';
 ?>
 <link href="css/style.css" rel="stylesheet" type="text/css">	
 <link rel="stylesheet" type="text/css" href="css/style.css"/>

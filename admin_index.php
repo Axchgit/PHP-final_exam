@@ -1,3 +1,22 @@
+
+<!--
+	
+	
+	暂存文件；
+	作用：管理员主页面；
+	
+	-->
+
+
+
+
+
+
+
+
+<?php
+//include 'conn/verify_admin.php';
+?>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
 <html>
@@ -20,6 +39,3 @@
 		</div>
 	</body>
 </html>
-<?php
-include 'conn/verify_admin.php';
-?>
