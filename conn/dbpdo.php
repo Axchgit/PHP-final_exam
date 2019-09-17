@@ -1,5 +1,5 @@
 <?php
-$dsn="mysql:host=127.0.0.1;dbname=final_exam";	
+$dsn="mysql:host=127.0.0.1;dbname=vegedb";	
 try{
 	$pdo=new PDO($dsn,'root','');
 }catch(PDOException $e){
